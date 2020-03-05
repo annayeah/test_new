@@ -1,10 +1,11 @@
 #include <stdio.h>
-int tmain()
+
+int main()
 {
-    int amount = 0.46;
+    float amount = 0.46;
     int cents_amount = amount * 100;
-    int total_counter;
-    while (amount >=25);
+    int total_counter = 0;
+    while (amount >= 25);
     {
         int quarters = cents_amount / 25;
         int dimes = (cents_amount % 25) / 10;
@@ -13,5 +14,5 @@ int tmain()
         total_counter = quarters + dimes + nickels + pennies;
     }
 
-    printf(total_counter);
+    printf("%d", total_counter);
 }
